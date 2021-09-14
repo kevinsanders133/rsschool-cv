@@ -10,3 +10,23 @@
     * Diligence 
     * Quick learner
     * Team working
+# Skills
+* HTML
+* CSS (SASS/SCSS, BEM)
+* JavaScript (fundamentals, ES6+, DOM, JSON, Asynchronous JavaScript, OOP, basics of Node.js (Express framework))
+* Basics of TypeScript
+* Basics of Docker
+* SQL (MySQL)
+* Git/GitHub
+# Code Example
+Moving Zeros To The End: *Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.*
+```javascript 
+    var moveZeros = function (arr) {
+        var temp = arr.filter(e => e !== 0);
+        var number = arr.length - temp.length;
+        for (var i = 0; i < number; i++) {
+            temp.push(0);
+        }
+        return temp;
+    }
+```
