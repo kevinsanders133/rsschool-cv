@@ -30,3 +30,12 @@ Moving Zeros To The End: *Write an algorithm that takes an array and moves all o
         return temp;
     }
 ```
+# Education
+* **Siedlce University of Natural Sciences and Humanities**
+    * Informatics (specialization: databases programming)
+* **Udemy**
+    * [Microservices with Node JS and React](https://www.udemy.com/course/microservices-with-node-js-and-react/) (in process)
+# Languages
+* **English:** B1-B2
+* **Polish:** B2
+* **Russian:** Native
