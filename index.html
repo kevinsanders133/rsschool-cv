@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!--============================ META TAGS START ============================-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--============================ META TAGS END ==============================-->
+    
+    <!--============================ HIGHLIGHT.JS START ==================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <!--============================ HIGHLIGHT.JS END ==================================-->
+
+    <!--============================ CSS + FONTS START ==================================-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap">
+    <link rel="stylesheet" href="./style/style.css">
+    <!--============================ CSS + FONTS END ====================================-->
+
+    <script src="./js/index.js" defer></script>
+
+    <title>Konstantin Savastsenia</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--=========================================================================-->
+      <!--============================= HEADER START ==============================-->
+      <!--=========================================================================-->
+      <header class="header">
+        <nav class="header__navbar">
+          <ul class="header__list list">
+            <li class="header__item"><a data-goto=".contact-info" href="#" class="header__link">Contact</a></li>
+            <li class="header__item"><a data-goto=".about-me" href="#" class="header__link">About</a></li>
+            <li class="header__item"><a data-goto=".skills" href="#" class="header__link">Skills</a></li>
+            <li class="header__item"><a data-goto=".code-example" href="#" class="header__link">Code</a></li>
+            <li class="header__item"><a data-goto=".education" href="#" class="header__link">Education</a></li>
+            <li class="header__item"><a data-goto=".languages" href="#" class="header__link">Languages</a></li>
+            <li class="header__item"><a data-goto=".projects" href="#" class="header__link">Projects</a></li>
+          </ul>
+        </nav>
+        <div class="header__button">
+          <div class="header__burger"></div>
+        </div>
+      </header>
+      <!--=========================================================================-->
+      <!--============================= HEADER END ================================-->
+      <!--=========================================================================-->
+      
+      <!--=========================================================================-->
+      <!--============================= MAIN START ================================-->
+      <!--=========================================================================-->
+      <main class="main">
+        <!--==================== SECTION PROFILE START =======================-->
+        <section class="profile">
+          <figure class="profile__avatar">
+            <img src="./img/avatar.png" alt="My avatar">
+          </figure>
+          <div class="profile__title">
+            <h1>Konstantin Savastsenia</h1>
+            <h2>Student</h2>
+          </div>
+        </section>
+        <!--==================== SECTION PROFILE END =======================-->
+        
+        <div class="main__container">
+          <!--==================== SECTION CONTACT INFO START =======================-->
+          <section class="contact-info">
+            <h2 class="contact-info__header">My Contact Info</h2>
+            <ul class="contact-info__list list">
+              <li class="contact-info__item"><a href="https://www.linkedin.com/in/konstantin-savastsenia-aa119721a/"><img src="./img/linkedin.svg" alt="linkedin" class="contact-info__link"></a><span>/in/konstantin-savastsenia-aa119721a/</span></li>
+              <li class="contact-info__item"><a href="mailto:fairytailetyp@gamil.com"><img src="./img/gmail.svg" alt="email" class="contact-info__link"></a><span>fairytailetyp@gmail.com</span></li>
+              <li class="contact-info__item"><a href="https://github.com/kevinsanders133"><img src="./img/github2.svg" alt="github" class="contact-info__link"></a><span>@kevinsanders133</span></li>
+            </ul>
+          </section>
+          <!--==================== SECTION CONTACT INFO END =======================-->
+          
+          <!--==================== SECTION ABOUT ME START =======================-->
+          <section class="about-me">
+            <div class="about-me__main">
+              <h2 class="about-me__header">About Me</h2>
+              <p class="about-me__paragraph">I'm 20 years old and I'm studying Informatics at University of Natural Sciences and Humanities in Siedlce (Poland). My goal is to gain knowledge in the field of front-end development and get a job (preferably at EPAM Systems).</p>
+            </div>
+            <div class="about-me__strengths">
+              <h3>My strengths</h3>
+              <ul class="about-me__list list">
+                <li class="about-me__item"><div class="arrow"></div><span>Adaptability</span></li>
+                <li class="about-me__item"><div class="arrow"></div><span>Diligence</span></li>
+                <li class="about-me__item"><div class="arrow"></div><span>Quick learner</span></li>
+                <li class="about-me__item"><div class="arrow"></div><span>Team working</span></li>
+              </ul>
+            </div>
+          </section>
+          <!--==================== SECTION ABOUT ME END =======================-->
+          
+          <!--==================== SECTION SKILLS START =======================-->
+          <section class="skills">
+            <h2 class="skills__header">Skills</h2>
+            <ul class="skills__list list">
+              <li class="skills__item"><div class="arrow"></div><span>HTML</span></li>
+              <li class="skills__item"><div class="arrow"></div><span>CSS (SASS/SCSS, BEM)</span></li>
+              <li class="skills__item js"><div class="arrow"></div><span>JavaScript (fundamentals, ES6+, DOM, JSON, Asynchronous JavaScript, OOP, basics of Express framework)</span></li>
+              <li class="skills__item"><div class="arrow"></div><span>Basics of TypeScript</span></li>
+              <li class="skills__item"><div class="arrow"></div><span>Basics of Docker</span></li>
+              <li class="skills__item"><div class="arrow"></div><span>SQL (MySQL)</span></li>
+              <li class="skills__item"><div class="arrow"></div><span>Git/GitHub</span></li>
+            </ul>
+          </section>
+          <!--==================== SECTION SKILLS END =======================-->
+          
+          <!--==================== SECTION CODE EXAMPLE START =======================-->
+          <section class="code-example">
+            <h2 class="code-example__header">Code Examples</h2>
+            <p class="code-expamle__task"><strong>Moving Zeros To The End:</strong> <i>Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.</i></p>
+            <pre>
+              <code>
+    var moveZeros = function (arr) {
+      var temp = arr.filter(e => e !== 0);
+      var number = arr.length - temp.length;
+      for (var i = 0; i &lt; number; i++) {
+          temp.push(0);
+      }
+      return temp;
+    }
+              </code>
+            </pre>
+          </section>
+          <!--==================== SECTION CODE EXAMPLE END =======================-->
+          
+          <!--==================== SECTION EDUCATION START =======================-->
+          <section class="education">
+            <h2 class="education__header">Education</h2>
+            <ul class="education__list list">
+              <li class="education__item">
+                  <strong>Siedlce University of Natural Sciences and Humanities:</strong> 
+                  3rd year, Informatics, specialization - data bases programming;
+              </li>
+              <li class="education__item">
+                <strong>Udemy:</strong>
+                <a href="https://www.udemy.com/course/microservices-with-node-js-and-react/"> Microservices with Node JS and React</a> (in process).
+              </li>
+            </ul>
+          </section>
+          <!--==================== SECTION EDUCATION END =======================-->
+          
+          <!--==================== SECTION LANGUAGES START =======================-->
+          <section class="languages">
+            <h2 class="languages__header">Languages</h2>
+            <ul class="languages__list list">
+              <li class="languages__item"><strong>English:</strong> B1-B2</li>
+              <li class="languages__item"><strong>Polish:</strong> B2</li>
+              <li class="languages__item"><strong>Russian:</strong> Native</li>
+            </ul>
+          </section>
+          <!--==================== SECTION LANGUAGES END =======================-->
+          
+          <!--==================== SECTION PROJECTS START =======================-->
+          <section class="projects">
+            <h2 class="projects__header">Projects</h2>
+            <ul class="projects__list list">
+              <li class="projects__item"><a href="https://github.com/kevinsanders133/messenger" target="_blank"><img src="./img/libchat.png" alt="Project: messenger" class="projects__first"></a>
+                <div>
+                  My university project.
+                  It's simple messenger build on Node.js and Docker.
+                  <h3>Used technologies</h3>
+                  <h4>Front-end</h4>
+                  HTML5, CSS3, JavaScript, EJS.
+                  <h4>Back-end</h4>
+                  Microservices are written in JavaScript on the Node.js platform. I used the Express framework and socket.io library. All microservices are dockerized. 
+                  To create and orchestrate the containers I used the docker-compose.yml file in which all microservices settings and dependencies are defined. 
+                  I used a reverse proxy in the form of Nginx.
+                  User and chat's data is collected in MongoDB Atlas.
+                </div>
+              </li>
+              <li class="projects__item"><a href="https://afconsult.by/" target="_blank"><img src="./img/afconsult.svg" alt="Project: afconsult.by" class="projects__second"></a>
+                <div>
+                  Landing page for leasing company (collaboration with @ArtemBartash and @megarex133).
+                  <h3>Used technologies</h3>
+                  HTML5, CSS3, JavaScript, map is connected via Yandex Map Constructor.
+                </div>
+              </li>
+            </ul>
+          </section>
+          <!--==================== SECTION PROJECTS END =======================-->
+        </div>
+      </main>
+      <!--=========================================================================-->
+      <!--============================= MAIN END ================================-->
+      <!--=========================================================================-->
+
+      <!--=========================================================================-->
+      <!--============================= FOOTER START ==============================-->
+      <!--=========================================================================-->
+      <footer class="footer">
+        <ul class="footer__list">
+          <li class="footer__item-rss"><a href="https://rs.school/js/"><img src="./img/rs_school.svg" alt="Rs School" class="footer__link-rss"></a></li>
+          <li class="footer__item-year"><span class="footer__year">2021</span></li>
+          <li class="footer__item-github"><a href="https://github.com/kevinsanders133"><img src="./img/github.svg" alt="Github" class="footer__link-github"></a></li>
+        </ul>
+      </footer>
+      <!--=========================================================================-->
+      <!--============================= FOOTER END ==============================-->
+      <!--=========================================================================-->
+    </div>
+  </body>
+</html>
