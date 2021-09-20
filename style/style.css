@@ -1,0 +1,328 @@
+:root {
+    --selection: rgba(255, 100, 200, 0.35);
+    --background: #242424;
+    --text: #ffffff;
+    --string: #67fca8;
+    --number: #44ead9;
+    --title: #9e4ee8;
+    --built_in: #ea5452;
+    --keyword: #bc368b;
+    --function: #e552ea;
+    --params: #508be5;
+    --comment: #7f7f7f;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+body {
+    background-color: #1D262D;
+    font-family: "Red+Hat+Display:wght@400;900";
+}
+section {
+    margin-left: 100px;
+}
+h2 {
+    color: #ff086f;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: sans-serif;
+}
+.list {
+    list-style-type: none;
+}
+/* ==================== HEADER START ======================= */
+.header {
+    height: 100px;
+    display: flex;
+    background-color: #1D262D;
+    justify-content: center;
+    align-items: center;
+    border: solid white 2px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.header__name {
+    font-size: 32px;
+}
+.header__list {
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    list-style-type: none;
+}
+.header__list-open {
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    list-style-type: none;
+}
+.header__link {
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #1D262D;
+    transition: background-color ease-in-out 0.3s;
+}
+.header__link:hover {
+    background-color:#f00969;
+    transition: background-color ease-in-out 0.5s;
+}
+.header__button {
+    display: none;
+}
+/* ==================== HEADER END ======================= */
+
+
+/* ==================== MAIN START ======================= */
+.main {
+    background-color: #1D262D;
+    font-size: 22px;
+}
+.main__container {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: white;
+    line-height: 50px;
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
+.arrow {
+    width: 10px;
+    height: 10px;
+    border-bottom: #ff086f 3px solid;
+    border-right: #ff086f 3px solid;
+    transform: rotate(-45deg);
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 2px;
+}
+
+/* ==================== SECTION PROFILE START ======================= */
+.profile {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 0;
+}
+.profile__avatar {
+    margin-right: 200px;
+    background-color: #ff086f;
+    box-shadow: 5px 10px #ff086f;
+    border-radius: 50px;
+}
+.profile__avatar img {
+    height: auto;
+    width: 330px;
+    border-radius: 40px;
+    transition: width ease-in-out 0.5s;
+}
+.profile__avatar img:hover {
+    width: 350px;
+    transition: width ease-in-out 0.5s;
+}
+.profile h1 {
+    font-size: 35px;
+}
+/* ==================== SECTION PROFILE END ======================= */
+
+
+/* ==================== SECTION CONTACT INFO START ======================= */
+.contact-info {
+    margin-top: 50px;
+}
+.contact-info__list {
+    list-style-type: none;
+    margin-top: 20px;
+}
+.contact-info__item {
+    display: flex;
+    align-items: center;
+    line-height: normal;
+}
+.contact-info__item span {
+    margin-left: 20px;
+    padding-bottom: 3px;
+}
+.contact-info__link {
+    height: auto;
+    width: 40px;
+}
+/* ==================== SECTION CONTACT INFO END ======================= */
+
+
+/* ==================== SECTION ABOUT ME START ======================= */
+.about-me {
+    max-width: 1000px;
+    margin-top: 100px;
+    display: flex;
+}
+.about-me__main {
+    max-width: 600px;
+}
+.about-me__strengths {
+    margin-left: 50px;
+}
+.about-me__strengths h3 {
+    color: #ff086f;
+}
+.about-me__item {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+/* ==================== SECTION ABOUT ME END ======================= */
+
+
+/* ==================== SECTION SKILLS START ======================= */
+.skills {
+    max-width: 450px;
+    margin-top: 100px;
+}
+.skills__list {
+    margin: 10px 0 0 30px;
+}
+.skills__item {
+    display: flex;
+    align-items: center;
+}
+.js {
+    display: block;
+}
+.js .arrow {
+    margin-bottom: 4px;
+}
+/* ==================== SECTION SKILLS END ======================= */
+
+
+/* ==================== SECTION CODE EXAMPLE START ======================= */
+.code-example {
+    max-width: 700px;
+    margin-top: 100px;
+}
+pre code {
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    background: var(--background) !important;
+}
+pre code *::selection,
+.hljs::selection {
+    background: var(--selection) !important;
+}
+.hljs {
+    color: var(--text);
+}
+.hljs-string {
+    color: var(--string);
+}
+.hljs-number {
+    color: var(--number) !important;
+}
+.hljs-title {
+    color: var(--title) !important;
+}
+.hljs-built_in {
+    color: var(--built_in) !important;
+}
+.hljs-keyword {
+    color: var(--keyword) !important;
+}
+.hljs-function > .hljs-keyword {
+    color: var(--function) !important;
+    font-style: italic;
+}
+.hljs-params {
+    color: var(--params);
+}
+.hljs-comment {
+    color: var(--comment);
+}
+/* ==================== SECTION CODE EXAMPLE END ======================= */
+
+
+/* ==================== SECTION EDUCATION START ======================= */
+.education {
+    margin-top: 10px;
+    max-width: 900px;
+}
+.education__list a {
+    color: #000;
+}
+/* ==================== SECTION EDUCATION END ======================= */
+
+
+/* ==================== SECTION LANGUAGES START ======================= */
+.languages {
+    margin-top: 100px;
+}
+/* ==================== SECTION LANGUAGES END ======================= */
+
+
+/* ==================== SECTION LANGUAGES START ======================= */
+.projects {
+    margin-top: 100px;
+    max-width: 900px;
+}
+.projects__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.projects__item {
+    display: flex;
+    flex-direction: column;
+}
+.projects__first {
+    height: auto;
+    width: 200px;
+    margin-top: 20px;
+}
+.projects__second {
+    height: auto;
+    width: 70px;
+    margin-top: 60px;
+}
+/* ==================== SECTION LANGUAGES END ======================= */
+
+
+/* ==================== FOOTER START ======================= */
+.footer {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 0 0 40px 0;
+    padding-bottom: 20px;
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+.footer__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+.footer__item-year {
+    margin-right: 100px;
+}
+.footer__link-rss {
+    height: auto;
+    width: 200px;
+}
+.footer__link-github {
+    height: auto;
+    width: 100px;
+}
+/* ==================== FOOTER END ======================= */
