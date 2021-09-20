@@ -92,6 +92,25 @@
             </ul>
           </section>
           <!--==================== SECTION SKILLS END =======================-->
+          
+          <!--==================== SECTION CODE EXAMPLE START =======================-->
+          <section class="code-example">
+            <h2 class="code-example__header">Code Examples</h2>
+            <p class="code-expamle__task"><strong>Moving Zeros To The End:</strong> <i>Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.</i></p>
+            <pre>
+              <code>
+    var moveZeros = function (arr) {
+      var temp = arr.filter(e => e !== 0);
+      var number = arr.length - temp.length;
+      for (var i = 0; i &lt; number; i++) {
+          temp.push(0);
+      }
+      return temp;
+    }
+              </code>
+            </pre>
+          </section>
+          <!--==================== SECTION CODE EXAMPLE END =======================-->
         </div>
       </main>
     </div>
